@@ -1,16 +1,201 @@
-# React + Vite
+# MonoBlog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack blogging platform built using **React, Appwrite, and Redux Toolkit**.
 
-Currently, two official plugins are available:
+MonoBlog is designed to provide a clean and scalable blogging experience where users can authenticate, create posts, manage content, upload featured images, and read blogs in a responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React 19
+* Vite
+* React Router DOM
+* Redux Toolkit
+* React Hook Form
+* TinyMCE Editor
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend / BaaS
+
+* Appwrite Authentication
+* Appwrite Database
+* Appwrite Storage
+
+### Tooling
+
+* ESLint
+* Prettier
+
+---
+
+## Current Progress
+
+### Completed
+
+* Project initialization using Vite
+* Appwrite project configuration
+* Environment configuration setup
+* Authentication service setup
+* Database service setup
+* File upload service setup
+* Project structure setup
+
+### In Progress
+
+* UI Development
+* Authentication pages
+* Redux integration
+* Routing setup
+
+### Planned
+
+* User Authentication (Signup/Login/Logout)
+* Create Blog Post
+* Edit Blog Post
+* Delete Blog Post
+* Rich Text Blog Editor
+* Featured Image Upload
+* Public Blog Listing
+* Individual Blog Pages
+* Dashboard
+
+---
+
+## Project Structure
+
+```bash
+MonoBlog/
+│
+├── public/
+├── src/
+│   ├── appwrite/
+│   │   ├── auth.js
+│   │   └── config.js
+│   │
+│   ├── assets/
+│   ├── conf/
+│   │   └── conf.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── .env
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_APPWRITE_URL=
+VITE_APPWRITE_PROJECT_ID=
+VITE_APPWRITE_DATABASE_ID=
+VITE_APPWRITE_COLLECTION_ID=
+VITE_APPWRITE_BUCKET_ID=
+```
+
+---
+
+## Installation & Setup
+
+Clone repository:
+
+```bash
+git clone https://github.com/your-username/monoblog.git
+```
+
+Move into project:
+
+```bash
+cd monoblog
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Core Services
+
+### Authentication Service
+
+Handles:
+
+* Account creation
+* Login
+* Logout
+* Current user session
+
+---
+
+### Database Service
+
+Handles:
+
+* Create post
+* Update post
+* Delete post
+* Fetch single post
+* Fetch all active posts
+
+---
+
+### Storage Service
+
+Handles:
+
+* File upload
+* File deletion
+* File preview
+
+---
+
+## Future Improvements
+
+* Dark Mode
+* Search & Filter
+* Comments
+* Likes
+* Bookmarking
+* SEO Optimization
+* Admin Dashboard
+* Performance Optimization
+
+---
+
+## Learning Goals
+
+This project is being built to strengthen practical understanding of:
+
+* React Architecture
+* State Management
+* Authentication Flow
+* Appwrite Integration
+* Scalable Project Structure
+* Production-level Full Stack Development
+
+---
+
+## Author
+
+**Shivam Mishra**
+
+Built with focus on learning scalable full-stack development.
